@@ -1,0 +1,22 @@
+<%inc #include "json/json.h" %>
+<%c++ 
+    auto staticData = @@.get<Json::Value>("staticData");
+%>
+<div class="static-data" style="position: absolute; opacity: 0;">
+    <%c++ for (auto it = staticData["data"].begin(); it != staticData["data"].end(); ++it) { %>
+        <div class="static-game">
+            <p>{% it->get("name", "").asString() %}</p>
+            <div>
+                <%c++ Json::Value genres = it->get("genres", Json::ValueType::arrayValue); %>
+                <%c++ for (auto jt = genres.begin(); jt != genres.end(); ++jt) { %>
+                    <span>{% jt->asString() %}</span>
+                    <%c++ auto tmp = jt; %>
+                    <%c++ ++tmp; %>
+                    <%c++ if (tmp != genres.end()) { %>
+                        <span> / </span>
+                    <%c++ } %>
+                <%c++ } %>
+            </div>
+        </div>
+    <%c++ } %>
+</div>

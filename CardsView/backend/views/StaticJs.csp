@@ -1,0 +1,5 @@
+<%inc #include "json/json.h" %>
+<%c++ 
+    auto staticData = @@.get<Json::Value>("staticData");
+%>
+var staticJson = {% staticData.toStyledString() %};

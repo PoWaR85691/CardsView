@@ -1,0 +1,47 @@
+{
+    "Windows": {
+        "icon": "static/icons/platform-icons/Windows.svg",
+        "stores": {
+            "Battle.net": {
+                "icon": "static/icons/store-icons/Battle.net.svg"
+            }, 
+            "Epic Games Store": {
+                "icon": "static/icons/store-icons/Epic-Games-Store.svg"
+            }, 
+            "gog.com": {
+                "icon": "static/icons/store-icons/gog.com.svg"
+            },  
+            "Steam": {
+                "icon": "static/icons/store-icons/Steam.svg"
+            },  
+            "Humble Bundle": {
+                "icon": "static/icons/store-icons/Humble-Bundle.svg"
+            }
+        }
+    },
+    "Android": {
+        "icon": "static/icons/platform-icons/Android.svg",
+        "stores": {
+            "Google Play": {
+                "icon": "static/icons/store-icons/Google-Play.svg"
+            },  
+            "Netflix": {
+                "icon": "static/icons/store-icons/Netflix.svg"
+            },  
+            "Amazon": {
+                "icon": "static/icons/store-icons/Amazon.svg"
+            }
+        }
+    },
+    "iOS": {
+        "icon": "static/icons/platform-icons/iOS.svg",
+        "stores": {
+            "App Store": {
+                "icon": "static/icons/store-icons/App-Store.svg"
+            },  
+            "Apple Arcade": {
+                "icon": "static/icons/store-icons/Apple-Arcade.svg"
+            }
+        }
+    }
+}

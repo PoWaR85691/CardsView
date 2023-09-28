@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B26D9BE0-8B8B-3FB6-8A5B-39AFFDA9C20C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>backend</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Studying\Practice\web\CardsView\backend\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">backend.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">backend</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Studying\Practice\web\CardsView\backend\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">backend.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">backend</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Studying\Practice\web\CardsView\backend\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">backend.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">backend</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Studying\Practice\web\CardsView\backend\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">backend.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">backend</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Programs/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;D:\Programs\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;D:\Programs\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Programs\vcpkg\installed\x64-windows\debug\lib\drogon.lib;Rpcrt4.lib;ws2_32.lib;crypt32.lib;Advapi32.lib;D:\Programs\vcpkg\installed\x64-windows\debug\lib\trantor.lib;D:\Programs\vcpkg\installed\x64-windows\lib\jsoncpp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Studying/Practice/web/CardsView/backend/build/Debug/backend.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Studying/Practice/web/CardsView/backend/build/Debug/backend.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Programs/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;D:\Programs\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;D:\Programs\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Programs\vcpkg\installed\x64-windows\lib\drogon.lib;Rpcrt4.lib;ws2_32.lib;crypt32.lib;Advapi32.lib;D:\Programs\vcpkg\installed\x64-windows\lib\trantor.lib;D:\Programs\vcpkg\installed\x64-windows\lib\jsoncpp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Studying/Practice/web/CardsView/backend/build/Release/backend.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Studying/Practice/web/CardsView/backend/build/Release/backend.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Programs/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;D:\Programs\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;D:\Programs\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Programs\vcpkg\installed\x64-windows\debug\lib\drogon.lib;Rpcrt4.lib;ws2_32.lib;crypt32.lib;Advapi32.lib;D:\Programs\vcpkg\installed\x64-windows\debug\lib\trantor.lib;D:\Programs\vcpkg\installed\x64-windows\lib\jsoncpp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Studying/Practice/web/CardsView/backend/build/MinSizeRel/backend.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Studying/Practice/web/CardsView/backend/build/MinSizeRel/backend.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Programs/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;D:\Programs\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Studying\Practice\web\CardsView\backend;D:\Studying\Practice\web\CardsView\backend\models;D:\Programs\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>D:\Programs\vcpkg\installed\x64-windows\debug\lib\drogon.lib;Rpcrt4.lib;ws2_32.lib;crypt32.lib;Advapi32.lib;D:\Programs\vcpkg\installed\x64-windows\debug\lib\trantor.lib;D:\Programs\vcpkg\installed\x64-windows\lib\jsoncpp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Studying/Practice/web/CardsView/backend/build/RelWithDebInfo/backend.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Studying/Practice/web/CardsView/backend/build/RelWithDebInfo/backend.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\6f1cd1d8e0339aef87a0f6ccbb78f0cd\CardsView.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating CardsView.h, CardsView.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/CardsView.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Studying\Practice\web\CardsView\backend\views\CardsView.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Studying\Practice\web\CardsView\backend\build\CardsView.h;D:\Studying\Practice\web\CardsView\backend\build\CardsView.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating CardsView.h, CardsView.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/CardsView.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Studying\Practice\web\CardsView\backend\views\CardsView.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Studying\Practice\web\CardsView\backend\build\CardsView.h;D:\Studying\Practice\web\CardsView\backend\build\CardsView.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating CardsView.h, CardsView.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/CardsView.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Studying\Practice\web\CardsView\backend\views\CardsView.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Studying\Practice\web\CardsView\backend\build\CardsView.h;D:\Studying\Practice\web\CardsView\backend\build\CardsView.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating CardsView.h, CardsView.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/CardsView.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Studying\Practice\web\CardsView\backend\views\CardsView.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Studying\Practice\web\CardsView\backend\build\CardsView.h;D:\Studying\Practice\web\CardsView\backend\build\CardsView.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\6f1cd1d8e0339aef87a0f6ccbb78f0cd\StaticHtml.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating StaticHtml.h, StaticHtml.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/StaticHtml.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Studying\Practice\web\CardsView\backend\views\StaticHtml.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Studying\Practice\web\CardsView\backend\build\StaticHtml.h;D:\Studying\Practice\web\CardsView\backend\build\StaticHtml.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating StaticHtml.h, StaticHtml.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/StaticHtml.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Studying\Practice\web\CardsView\backend\views\StaticHtml.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Studying\Practice\web\CardsView\backend\build\StaticHtml.h;D:\Studying\Practice\web\CardsView\backend\build\StaticHtml.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating StaticHtml.h, StaticHtml.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/StaticHtml.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Studying\Practice\web\CardsView\backend\views\StaticHtml.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Studying\Practice\web\CardsView\backend\build\StaticHtml.h;D:\Studying\Practice\web\CardsView\backend\build\StaticHtml.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating StaticHtml.h, StaticHtml.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/StaticHtml.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Studying\Practice\web\CardsView\backend\views\StaticHtml.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Studying\Practice\web\CardsView\backend\build\StaticHtml.h;D:\Studying\Practice\web\CardsView\backend\build\StaticHtml.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\6f1cd1d8e0339aef87a0f6ccbb78f0cd\StaticJs.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating StaticJs.h, StaticJs.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/StaticJs.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Studying\Practice\web\CardsView\backend\views\StaticJs.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Studying\Practice\web\CardsView\backend\build\StaticJs.h;D:\Studying\Practice\web\CardsView\backend\build\StaticJs.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating StaticJs.h, StaticJs.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/StaticJs.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Studying\Practice\web\CardsView\backend\views\StaticJs.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Studying\Practice\web\CardsView\backend\build\StaticJs.h;D:\Studying\Practice\web\CardsView\backend\build\StaticJs.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating StaticJs.h, StaticJs.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/StaticJs.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Studying\Practice\web\CardsView\backend\views\StaticJs.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Studying\Practice\web\CardsView\backend\build\StaticJs.h;D:\Studying\Practice\web\CardsView\backend\build\StaticJs.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating StaticJs.h, StaticJs.cc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Studying\Practice\web\CardsView\backend
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+drogon_ctl create view views/StaticJs.csp -o D:/Studying/Practice/web/CardsView/backend/build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Studying\Practice\web\CardsView\backend\views\StaticJs.csp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Studying\Practice\web\CardsView\backend\build\StaticJs.h;D:\Studying\Practice\web\CardsView\backend\build\StaticJs.cc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Studying\Practice\web\CardsView\backend\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Studying/Practice/web/CardsView/backend/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Programs\CMake\bin\cmake.exe -SD:/Studying/Practice/web/CardsView/backend -BD:/Studying/Practice/web/CardsView/backend/build --check-stamp-file D:/Studying/Practice/web/CardsView/backend/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Programs\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeFindDependencyMacro.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakePushCheckState.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckCXXSourceCompiles.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckCXXSourceRuns.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckIncludeFileCXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindOpenSSL.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPostgreSQL.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindThreads.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindZLIB.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Internal\CheckSourceRuns.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\SelectLibraryConfigurations.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonConfig.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonConfigVersion.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets-debug.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets-release.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonUtilities.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindBrotli.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindFilesystem.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindJsoncpp.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindSQLite3.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\ParseAndAddDrogonTests.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\Findc-ares.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorConfig.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorConfigVersion.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets-debug.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets-release.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeCXXCompiler.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeRCCompiler.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Studying/Practice/web/CardsView/backend/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Programs\CMake\bin\cmake.exe -SD:/Studying/Practice/web/CardsView/backend -BD:/Studying/Practice/web/CardsView/backend/build --check-stamp-file D:/Studying/Practice/web/CardsView/backend/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Programs\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeFindDependencyMacro.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakePushCheckState.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckCXXSourceCompiles.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckCXXSourceRuns.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckIncludeFileCXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindOpenSSL.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPostgreSQL.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindThreads.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindZLIB.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Internal\CheckSourceRuns.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\SelectLibraryConfigurations.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonConfig.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonConfigVersion.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets-debug.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets-release.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonUtilities.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindBrotli.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindFilesystem.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindJsoncpp.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindSQLite3.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\ParseAndAddDrogonTests.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\Findc-ares.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorConfig.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorConfigVersion.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets-debug.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets-release.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeCXXCompiler.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeRCCompiler.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Studying/Practice/web/CardsView/backend/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Programs\CMake\bin\cmake.exe -SD:/Studying/Practice/web/CardsView/backend -BD:/Studying/Practice/web/CardsView/backend/build --check-stamp-file D:/Studying/Practice/web/CardsView/backend/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Programs\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeFindDependencyMacro.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakePushCheckState.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckCXXSourceCompiles.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckCXXSourceRuns.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckIncludeFileCXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindOpenSSL.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPostgreSQL.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindThreads.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindZLIB.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Internal\CheckSourceRuns.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\SelectLibraryConfigurations.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonConfig.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonConfigVersion.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets-debug.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets-release.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonUtilities.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindBrotli.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindFilesystem.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindJsoncpp.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindSQLite3.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\ParseAndAddDrogonTests.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\Findc-ares.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorConfig.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorConfigVersion.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets-debug.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets-release.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeCXXCompiler.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeRCCompiler.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Studying/Practice/web/CardsView/backend/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Programs\CMake\bin\cmake.exe -SD:/Studying/Practice/web/CardsView/backend -BD:/Studying/Practice/web/CardsView/backend/build --check-stamp-file D:/Studying/Practice/web/CardsView/backend/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Programs\CMake\share\cmake-3.26\Modules\CMakeCXXInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeFindDependencyMacro.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeGenericSystem.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakePushCheckState.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeRCInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckCXXSourceCompiles.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckCXXSourceRuns.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckIncludeFileCXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\CheckLibraryExists.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Compiler\MSVC.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindOpenSSL.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPackageMessage.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindPostgreSQL.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindThreads.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\FindZLIB.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Internal\CheckSourceCompiles.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Internal\CheckSourceRuns.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\Windows.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake;D:\Programs\CMake\share\cmake-3.26\Modules\SelectLibraryConfigurations.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonConfig.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonConfigVersion.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets-debug.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets-release.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonTargets.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\DrogonUtilities.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindBrotli.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindFilesystem.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindJsoncpp.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\FindSQLite3.cmake;D:\Programs\vcpkg\installed\x64-windows\share\drogon\ParseAndAddDrogonTests.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\Findc-ares.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorConfig.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorConfigVersion.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets-debug.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets-release.cmake;D:\Programs\vcpkg\installed\x64-windows\share\trantor\TrantorTargets.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeCXXCompiler.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeRCCompiler.cmake;D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\3.26.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\main.cc" />
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\build\CardsView.cc">
+      <ObjectFileName>$(IntDir)/CardsView.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\build\StaticHtml.cc" />
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\build\StaticJs.cc" />
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\controllers\CardsView.cc">
+      <ObjectFileName>$(IntDir)/controllers/CardsView.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\controllers\GetData.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Studying\Practice\web\CardsView\backend\build\ZERO_CHECK.vcxproj">
+      <Project>{BA19F033-40D4-3E1C-B5B4-A356EE3D3D5C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

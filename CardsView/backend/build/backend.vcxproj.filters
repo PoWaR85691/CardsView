@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\main.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\build\CardsView.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\build\StaticHtml.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\build\StaticJs.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\controllers\CardsView.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Studying\Practice\web\CardsView\backend\controllers\GetData.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\6f1cd1d8e0339aef87a0f6ccbb78f0cd\CardsView.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\6f1cd1d8e0339aef87a0f6ccbb78f0cd\StaticHtml.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Studying\Practice\web\CardsView\backend\build\CMakeFiles\6f1cd1d8e0339aef87a0f6ccbb78f0cd\StaticJs.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Studying\Practice\web\CardsView\backend\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{15C0DA69-2C3C-3B34-856D-88BDB5915C5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7F0C22FD-BB7F-39B6-9C2C-D2462545FB48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
