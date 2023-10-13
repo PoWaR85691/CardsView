@@ -113,9 +113,9 @@ void matrix_to_sparse(double *matrix, int size, struct Sparse *sparse, enum Spar
         }
     }
 
-    sparse->line_end = malloc(size * sizeof(int));
-    sparse->index = malloc(not_zeros * sizeof(int));
-    sparse->value = malloc(not_zeros * sizeof(double));
+    sparse->line_end = (int*)malloc(size * sizeof(int));
+    sparse->index = (int*)malloc(not_zeros * sizeof(int));
+    sparse->value = (double*)malloc(not_zeros * sizeof(double));
 
     if (type == CSR)
     {
@@ -217,11 +217,11 @@ void change_sparse_type(struct Sparse *old_sparse, struct Sparse *new_sparse)
         new_sparse->type = CSR;
     }
     new_sparse->size = old_sparse->size;
-    new_sparse->line_end = malloc(size * sizeof(int));
-    new_sparse->index = malloc(old_sparse->line_end[size - 1] * sizeof(int));
-    new_sparse->value = malloc(old_sparse->line_end[size - 1] * sizeof(double));
+    new_sparse->line_end = (int*)malloc(size * sizeof(int));
+    new_sparse->index = (int*)malloc(old_sparse->line_end[size - 1] * sizeof(int));
+    new_sparse->value = (double*)malloc(old_sparse->line_end[size - 1] * sizeof(double));
 
-    int *old_line_curr_pos = malloc(size * sizeof(int));
+    int *old_line_curr_pos = (int*)malloc(size * sizeof(int));
     old_line_curr_pos[0] = 0;
     for (i = 1; i < size; i++)
     {
@@ -259,7 +259,7 @@ void sparse_lu(struct Sparse *a, struct Sparse *l, struct Sparse *u)
     // A
     enum Sparse_type a_type = a->type;
     int a_curr_pos; // 1D
-    int *a_line_curr_pos = malloc(size * sizeof(int)); // 2D
+    int *a_line_curr_pos = (int*)malloc(size * sizeof(int)); // 2D
 
     a_line_curr_pos[0] = ((a_type == CSR) ? 0 : 1);
     for (i = 1; i < size; i++)
@@ -280,14 +280,14 @@ void sparse_lu(struct Sparse *a, struct Sparse *l, struct Sparse *u)
     tmp_l.size = size;
     tmp_u.size = size;
 
-    tmp_l.line_end = malloc(size * sizeof(int));
-    tmp_u.line_end = malloc(size * sizeof(int));
+    tmp_l.line_end = (int*)malloc(size * sizeof(int));
+    tmp_u.line_end = (int*)malloc(size * sizeof(int));
 
-    tmp_l.index = malloc((1 + size)*size / 2 * sizeof(int));
-    tmp_u.index = malloc((1 + size)*size / 2 * sizeof(int));
+    tmp_l.index = (int*)malloc((1 + size)*size / 2 * sizeof(int));
+    tmp_u.index = (int*)malloc((1 + size)*size / 2 * sizeof(int));
 
-    tmp_l.value = malloc((1 + size)*size / 2 * sizeof(double));
-    tmp_u.value = malloc((1 + size)*size / 2 * sizeof(double));
+    tmp_l.value = (double*)malloc((1 + size)*size / 2 * sizeof(double));
+    tmp_u.value = (double*)malloc((1 + size)*size / 2 * sizeof(double));
 
     l_end_pos = tmp_l.line_end; *l_end_pos = 0;
     u_end_pos = tmp_u.line_end; *u_end_pos = 0;
@@ -367,19 +367,19 @@ void sparse_lu(struct Sparse *a, struct Sparse *l, struct Sparse *u)
     l->size = size;
     u->size = size;
 
-    l->line_end = malloc(size * sizeof(int));
-    u->line_end = malloc(size * sizeof(int));
+    l->line_end = (int*)malloc(size * sizeof(int));
+    u->line_end = (int*)malloc(size * sizeof(int));
     for (i = 0; i < size; i++)
     {
         l->line_end[i] = tmp_l.line_end[i];
         u->line_end[i] = tmp_u.line_end[i];
     }
 
-    l->index = malloc(tmp_l.line_end[size - 1] * sizeof(int));
-    u->index = malloc(tmp_u.line_end[size - 1] * sizeof(int));
+    l->index = (int*)malloc(tmp_l.line_end[size - 1] * sizeof(int));
+    u->index = (int*)malloc(tmp_u.line_end[size - 1] * sizeof(int));
 
-    l->value = malloc(tmp_l.line_end[size - 1] * sizeof(double));
-    u->value = malloc(tmp_u.line_end[size - 1] * sizeof(double));
+    l->value = (double*)malloc(tmp_l.line_end[size - 1] * sizeof(double));
+    u->value = (double*)malloc(tmp_u.line_end[size - 1] * sizeof(double));
 
     for (i = 0; i < tmp_l.line_end[size - 1]; i++)
     {
